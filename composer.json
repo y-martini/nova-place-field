@@ -1,0 +1,41 @@
+{
+    "name": "yuriy-martini/nova-package-name",
+    "require": {
+        "php": "^8.0",
+        "laravel/nova": "~4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=6.0",
+        "phpstan/phpstan": ">=1.0",
+        "squizlabs/php_codesniffer": ">=3.1"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YuriyMartini\\NovaPackageName\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YuriyMartini\\NovaPackageName\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YuriyMartini\\NovaPackageName\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
