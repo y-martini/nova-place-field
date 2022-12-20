@@ -7,7 +7,7 @@ use YuriyMartini\NovaPackageName\ServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app) // @phpstan-ignore-line
     {
         return [
             ServiceProvider::class,
