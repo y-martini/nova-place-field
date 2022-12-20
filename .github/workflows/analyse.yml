@@ -18,13 +18,23 @@ jobs:
           php-version: 8.0
           tools: composer:v2
           coverage: none
+        env:
+          COMPOSER_AUTH_JSON: |
+            {
+              "http-basic": {
+                "nova.laravel.com": {
+                  "username": "${{ secrets.NOVA_USERNAME }}",
+                  "password": "${{ secrets.NOVA_PASSWORD }}"
+                }
+              }
+            }
 
       - name: Install dependencies
         uses: nick-invision/retry@v1
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
+          command: composer install --prefer-stable --prefer-dist --no-interaction --no-progress
 
       - name: Analyse
         run: vendor/bin/phpstan
