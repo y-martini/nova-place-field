@@ -15,7 +15,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.0
+          php-version: 7.1
           tools: composer:v2
           coverage: none
         env:
@@ -23,8 +23,8 @@ jobs:
             {
               "http-basic": {
                 "nova.laravel.com": {
-                  "username": "${{ secrets.NOVA_USERNAME }}",
-                  "password": "${{ secrets.NOVA_PASSWORD }}"
+                  "username": "${{ secrets.NOVA_3_0_USERNAME }}",
+                  "password": "${{ secrets.NOVA_3_0_PASSWORD }}"
                 }
               }
             }
