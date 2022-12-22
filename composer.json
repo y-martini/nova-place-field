@@ -1,5 +1,5 @@
 {
-    "name": "yuriy-martini/nova-example-field",
+    "name": "yuriy-martini/nova-place-field",
     "require": {
         "php": "^7.1 || ^7.2",
         "laravel/nova": "<4.0"
@@ -17,12 +17,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "YuriyMartini\\NovaExampleField\\": "src"
+            "YuriyMartini\\NovaPlaceField\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "YuriyMartini\\NovaExampleField\\Tests\\": "tests"
+            "YuriyMartini\\NovaPlaceField\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YuriyMartini\\NovaExampleField\\ServiceProvider"
+                "YuriyMartini\\NovaPlaceField\\ServiceProvider"
             ]
         }
     },

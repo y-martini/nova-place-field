@@ -1,6 +1,6 @@
 <?php
 
-namespace YuriyMartini\NovaExampleField\Tests\Unit;
+namespace YuriyMartini\NovaPlaceField\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
