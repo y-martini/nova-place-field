@@ -1,6 +1,8 @@
 <?php
 
-namespace YuriyMartini\NovaPackageName;
+namespace YuriyMartini\NovaExampleField;
+
+use Laravel\Nova\Nova;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -11,7 +13,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        //
+        Nova::serving(function () {
+            Nova::script('yuriy-martini-example-field', __DIR__ . '/../dist/js/field.js');
+        });
     }
 
     /**
