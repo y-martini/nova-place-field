@@ -1,12 +1,12 @@
-# Nova Package Name
+# Nova Example Field
 
-[![Latest Version](http://img.shields.io/packagist/v/yuriy-martini/nova-package-name.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/yuriy-martini/nova-package-name)
-[![MIT License](https://img.shields.io/github/license/yuriy-martini/nova-package-name.svg?label=License&color=blue&style=for-the-badge)](https://github.com/yuriy-martini/nova-package-name/blob/master/LICENSE.md)
+[![Latest Version](http://img.shields.io/packagist/v/yuriy-martini/nova-example-field.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/yuriy-martini/nova-example-field)
+[![MIT License](https://img.shields.io/github/license/yuriy-martini/nova-example-field.svg?label=License&color=blue&style=for-the-badge)](https://github.com/yuriy-martini/nova-example-field/blob/master/LICENSE.md)
 
 ## Installation
 
 ```shell
-composer require yuriy-martini/nova-package-name
+composer require yuriy-martini/nova-example-field
 ```
 
 ## Usage
